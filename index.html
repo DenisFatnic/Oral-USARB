@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orarul Cursurilor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Antetul paginii -->
+    <header>
+        <div class="container-antet">
+            <!-- Titlul principal -->
+            <h1>Orarul Cursurilor</h1>
+            <!-- Butoanele de navigare între secțiuni -->
+            <div class="file-taburi">
+                <button>Grupă</button>
+                <button class="activ">Profesori</button>
+                <button>Săli</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Conținutul principal al paginii -->
+    <main>
+        <div class="container">
+            <!-- Secțiunea din stânga: calendarul săptămânal -->
+            <aside>
+                <!-- Căutare după grupă -->
+                <div class="cautare">
+                    <label for="cautare-grupa">Regim pentru student</label>
+                    <input type="text" id="cautare-grupa" placeholder="Caută grupă...">
+                </div>
+                
+                <!-- Titlu pentru tabel -->
+                <h3>Calendar săptămânal</h3>
+                
+                <!-- Tabelul care afișează zilele săptămânii și tipurile de activități -->
+                <div class="tabel-saptamanal">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ziua</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Fiecare rând reprezintă o zi a săptămânii -->
+                            <tr>
+                                <td>Luni</td>
+                                <td class="laborator">L</td>
+                                <td class="seminar">S</td>
+                                <td class="laborator">L</td>
+                                <td class="prelegere">P</td>
+                                <td class="laborator">L</td>
+                                <td class="seminar">S</td>
+                                <td class="laborator">L</td>
+                            </tr>
+                            <tr>
+                                <td>Marți</td>
+                                <td class="seminar">S</td>
+                                <td class="laborator">L</td>
+                                <td class="prelegere">P</td>
+                                <td class="seminar">S</td>
+                                <td class="laborator">L</td>
+                                <td class="prelegere">P</td>
+                                <td class="laborator">L</td>
+                            </tr>
+                            <tr>
+                                <td>Miercuri</td>
+                                <td class="prelegere">P</td>
+                                <td class="seminar">S</td>
+                                <td class="laborator">L</td>
+                                <td class="seminar">S</td>
+                                <td class="prelegere">P</td>
+                                <td class="laborator">L</td>
+                                <td class="seminar">S</td>
+                            </tr>
+                            <tr>
+                                <td>Joi</td>
+                                <td class="seminar">S</td>
+                                <td class="prelegere">P</td>
+                                <td class="laborator">L</td>
+                                <td class="laborator">L</td>
+                                <td class="seminar">S</td>
+                                <td class="laborator">L</td>
+                                <td class="seminar">S</td>
+                            </tr>
+                            <tr>
+                                <td>Vineri</td>
+                                <td class="laborator">L</td>
+                                <td class="laborator">L</td>
+                                <td class="prelegere">P</td>
+                                <td class="laborator">L</td>
+                                <td class="prelegere">P</td>
+                                <td class="seminar">S</td>
+                                <td class="laborator">L</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Legenda tipurilor de activități -->
+                <div class="legenda">
+                    <p><b>Legendă:</b></p>
+                    <p>P - Prelegere</p>
+                    <p>S - Seminar</p>
+                    <p>L - Laborator</p>
+                </div>
+            </aside>
+            
+            <!-- Secțiunea din dreapta: Programul detaliat al zilei -->
+            <section class="orar">
+                <h2>UNIVERSITATEA DE STAT „ALECU RUSSO” DIN BĂLȚI</h2>
+                <table>
+                    <!-- Fiecare rând afișează informații despre o materie (ora, tipul, profesorul, sala) -->
+                    <tr>
+                        <td>8:00</td>
+                        <td>9:30</td>
+                        <td>Matematica I<br>Seminar<br>asist. univ. Rotari T. V.<br><span>aud. 224</span></td>
+                    </tr>
+                    <tr>
+                        <td>9:45</td>
+                        <td>11:15</td>
+                        <td>Limba Engleză I<br>Seminar<br>asist. univ. Coșulean L.<br><span>aud. 406</span></td>
+                    </tr>
+                    <tr>
+                        <td>13:15</td>
+                        <td>14:45</td>
+                        <td>Proiectarea Paginilor Web<br>Laborator<br>asist. univ. Chilat S.<br><span>aud. 141a</span></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Subsolul paginii -->
+    <footer>
+        <p>Fatnic Denis</p>
+    </footer>
+</body>
+</html>

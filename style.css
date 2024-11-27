@@ -1,0 +1,196 @@
+/* Stilizare generală */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fundal.jpg'); /* Imaginea de fundal */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000;
+}
+
+/* Stilizare antet */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-bottom: 3px solid #1a5d1a;
+}
+
+.container-antet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-taburi button {
+    background: #1a5d1a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.file-taburi button.activ {
+    background: #0f3d0f;
+}
+
+/* Container pentru conținut */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Stilizare pentru partea stângă (calendar săptămânal) */
+aside {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.tabel-saptamanal table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabel-saptamanal th, .tabel-saptamanal td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+}
+
+.tabel-saptamanal th {
+    background-color: #1a5d1a;
+    color: white;
+}
+
+/* Culori pentru fiecare tip de activitate */
+.tabel-saptamanal .laborator { background-color: #1a5d1a; color: #fff; }
+.tabel-saptamanal .seminar { background-color: #ff6f61; color: #fff; }
+.tabel-saptamanal .prelegere { background-color: #ffa500; color: #fff; }
+
+/* Stilizare pentru partea dreaptă (orar detaliat) */
+.orar {
+    width: 70%;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.orar h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.or
+/* Continuare stiluri pentru orar */
+.orar table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.orar td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.orar td span {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Stilizare footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a5d1a;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Stilizare legendă */
+.legenda {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.legenda p {
+    margin: 5px 0;
+}
+
+/* Stilizare inputuri */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Stilizare butoane */
+button {
+    padding: 10px 20px;
+    background-color: #1a5d1a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0f3d0f;
+}
+
+/* Adăugare efect de hover pe celulele din tabelul orar */
+.orar td:hover {
+    background-color: #f0f0f0;
+}
+
+/* Stilizare pentru tabelul orar în secțiunea din stânga */
+.tabel-saptamanal td:hover {
+    background-color: #f0f0f0;
+}
+
+/* Tabelul de legendă */
+.legenda {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Stilizare pentru tabelul de orar */
+.orar table, .tabel-saptamanal table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Stiluri pentru mobil */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside, .orar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container-antet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .file-taburi button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
