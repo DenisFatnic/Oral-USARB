@@ -1,3 +1,10 @@
+html {
+    background-image: url(img/93869a4295512069b4ae66e876b46bbe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 /* Stilizare generală */
 body {
     font-family: Arial, sans-serif;
